@@ -1,0 +1,19 @@
+version: '2'
+services:
+  prnt:
+    build: ./prnt
+    privileged: true
+    ports:
+      - "137:137"
+      - "139:139"
+      - "445:445"
+      - "631:631"
+      - "5353:5353"
+  wifi:
+    image: balenablocks/wifi-connect:rpi
+    restart: always
+    network_mode: host
+    privileged: true
+    labels:
+      io.balena.features.dbus: '1'
+      io.balena.features.firmware: '1'
