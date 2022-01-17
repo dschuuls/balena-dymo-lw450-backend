@@ -7,6 +7,8 @@ RUN apt-get update \
     printer-driver-dymo \
     usbutils
 
+### http://download.dymo.com/dymo/Software/Download%20Drivers/Linux/Download/dymo-cups-drivers-1.4.0.tar.gz ###
+
 COPY start.sh dymo-cups-drivers-1.4.0.tar.gz ./
 
 RUN tar -xzf dymo-cups-drivers-1.4.0.tar.gz \
