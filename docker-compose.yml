@@ -1,7 +1,7 @@
 version: '2'
 services:
-  dymo:
-    build: ./dymo
+  prnt:
+    build: ./prnt
     privileged: true
     ports:
       - "137:137"

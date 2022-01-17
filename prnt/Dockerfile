@@ -1,4 +1,6 @@
-FROM balenalib/%%BALENA_MACHINE_NAME%%:bullseye
+# https://www.balena.io/docs/reference/base-images/base-images-ref
+
+FROM balenalib/raspberry-pi:latest
 
 RUN apt-get update \
  && apt-get install -y \
@@ -7,7 +9,7 @@ RUN apt-get update \
     printer-driver-dymo \
     usbutils
 
-### http://download.dymo.com/dymo/Software/Download%20Drivers/Linux/Download/dymo-cups-drivers-1.4.0.tar.gz ###
+# http://download.dymo.com/dymo/Software/Download%20Drivers/Linux/Download/dymo-cups-drivers-1.4.0.tar.gz
 
 COPY start.sh dymo-cups-drivers-1.4.0.tar.gz ./
 
