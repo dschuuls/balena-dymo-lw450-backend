@@ -12,7 +12,7 @@ It was created to run on a RaspberryPi in BalenaCloud. Find info on BalenaCloud 
 
 You can deploy this app to a new balenaCloud fleet in one click using the button below:
 
-[![](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/dschuuls/balena-dymo-lw450-backend)
+[![](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/dschuuls/dymo-lw450-backend)
 
 ... or follow these steps:
 
