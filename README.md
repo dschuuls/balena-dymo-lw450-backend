@@ -23,5 +23,5 @@ You can deploy this app to a new balenaCloud fleet in one click using the button
 - Print print at `ipp://<RPi-IP>:631/printers/dymo`
 
 ## Further remarks
-- The drivers (.tar.gz file) were added to this repo because the download from dymo.com needs a captcha to be solved, which can't be done during the Docker image build process 
+- Added lw450.ppd file to this repo because download from dymo.com needs a captcha to be solved
 - Companion repo with a simple web frontend to print address labels: https://github.com/dschuuls/dymo-lw450-frontend
