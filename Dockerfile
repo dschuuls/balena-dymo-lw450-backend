@@ -11,13 +11,18 @@ RUN apt-get update \
 
 # http://download.dymo.com/dymo/Software/Download%20Drivers/Linux/Download/dymo-cups-drivers-1.4.0.tar.gz
 
-COPY start.sh dymo-cups-drivers-1.4.0.tar.gz ./
+#COPY start.sh dymo-cups-drivers-1.4.0.tar.gz ./
 
-RUN tar -xzf dymo-cups-drivers-1.4.0.tar.gz \
- && mkdir -p /usr/share/cups/model \
- && cp ./dymo-cups-drivers-1.4.0.5/ppd/lw450.ppd /usr/share/cups/model/ \
- && rm -rf ./dymo-cups-drivers-1.4.0.5 \
- && rm -rf ./dymo-cups-drivers-1.4.0.tar.gz
+#RUN tar -xzf dymo-cups-drivers-1.4.0.tar.gz \
+# && mkdir -p /usr/share/cups/model \
+# && cp ./dymo-cups-drivers-1.4.0.5/ppd/lw450.ppd /usr/share/cups/model/ \
+# && rm -rf ./dymo-cups-drivers-1.4.0.5 \
+# && rm -rf ./dymo-cups-drivers-1.4.0.tar.gz
+
+#RUN chmod +x start.sh
+
+COPY lw450.ppd /usr/share/cups/model/
+COPY start.sh ./
 
 RUN chmod +x start.sh
 
