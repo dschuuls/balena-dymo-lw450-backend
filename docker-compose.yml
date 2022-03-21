@@ -1,0 +1,12 @@
+version: '2.1'
+
+services:
+  dymo-lw450-backend:
+    build: .
+    privileged: true
+    ports:
+      - "137:137"
+      - "139:139"
+      - "445:445"
+      - "631:631"
+      - "5353:5353"
