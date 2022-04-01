@@ -20,7 +20,7 @@ You can deploy this app to a new balenaCloud fleet in one click using the button
 - Push this repo to the fleet and watch a Docker image being build
 - Connect the printer to the RaspberryPi, if you haven't already
 - The RaspberryPi should pull the image and start a container
-- Print print at `ipp://<RPi-IP>:631/printers/dymo`
+- Print at `ipp://<RPi-IP>:631/printers/dymo`
 
 ## Further remarks
 - Added lw450.ppd file to this repo because download from dymo.com needs a captcha to be solved
